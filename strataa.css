@@ -1,0 +1,322 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    font-family: "Work Sans", sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+/* this is where the button properties are set */
+.orangebtn{
+    padding: 15px 30px;
+    background-color:#F0884F;
+    border:1px solid #F0884F;
+    color: white;
+}
+.whitebtn{
+    padding: 15px 30px;
+    background-color:white;
+    border:1px solid #F0884F;
+    color:#F0884F;
+}
+
+
+/* Navigation section */
+nav{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 0px 50px;
+    box-shadow: 10px 20px 80px black;
+}
+.profile{
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    background-color:#F0884F;
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+}
+
+nav .pages ul{
+    display: flex;
+    gap:5px;
+    list-style: none;
+    align-items: center;
+}
+nav .pages ul li{
+    text-decoration: none;
+    /* background-color:blueviolet; */
+    color: white;
+    cursor: pointer;
+    padding: 40px 20px 5px;
+}
+nav .pages ul li a{
+    text-decoration: none;
+    color: #F0884F;
+    cursor: pointer;
+}
+nav .pages ul li:hover{
+    text-decoration: none;
+    background-color:#F0884F;
+    color: white;
+    cursor: pointer;
+}
+nav .pages ul li:hover a{
+    text-decoration: none;
+    background-color:#F0884F;
+    color: white;
+    cursor: pointer;
+}
+nav .pages ul li a:hover{
+    text-decoration: none;
+    background-color:#F0884F;
+    color: white;
+    cursor: pointer;
+}
+
+nav .CTA ul .whitebtn a{
+    color: #F0884F;
+}
+nav .CTA ul .orangebtn a{
+    color:white;
+}
+nav .CTA ul{
+    display: flex;
+    gap:10px;
+    list-style: none;
+    align-items: center;
+}
+/* nav .CTA ul li{
+    border-radius: 25px;
+} */
+nav .CTA ul li a{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Hero Section */
+.hero{
+    margin: 30px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.hero_text{
+    width: 60%;
+}
+.hero_text h1{
+    font-size: 35px;
+    padding: 20px 0px;
+}
+.hero_link{
+    margin: 30px 0px 0px;
+}
+.hero_link ul{
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+}
+.hero_link ul li a{
+    text-decoration: none;
+    /* color: white; */
+    cursor: pointer;
+}
+.hero_link ul .orangebtn{
+    border-radius: 25px;
+    color: white;
+}
+.hero_link ul .orangebtn a{
+    color: white;
+    cursor: pointer;
+}
+.hero_link ul .whitebtn{
+    border-radius: 25px;
+    color: #F0884F;
+}
+.hero_link ul .whitebtn a{
+    color: #F0884F;
+    cursor: pointer;
+}
+.hero_image img{
+    width: 100%;
+    margin: 0px 0px 20px;
+}
+.gift{
+    margin: 20px 40px;
+    display: flex;
+    gap: 150px;
+    /* justify-content:space-between; */
+    align-items: center;
+}
+.gift_content{
+    display: flex;
+    gap: 30px;
+    /* justify-content:space-between; */
+    align-items: center;
+}
+.gift_image{
+    background-color:#F0884F;
+    width: 300px;
+    height: 100px;
+    border-radius: 10px;
+}
+.secondlayer{
+    margin: 30px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.secondlayer_text{
+    width: 30%;
+}
+.secondlayer_text h1{
+    font-size: 35px;
+    padding: 20px 0px;
+}
+
+
+.adcontainer{
+    /* background-color: blueviolet; */
+    /* border: 2px solid black; */
+    border-bottom: 1px solid rgb(195, 195, 195);
+    width: 80%;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    margin-inline: auto;
+}
+.adcontent_image{
+    border: 1px solid grey ;
+    height: 300px;
+    width: 600px;
+    margin: 20px 0px;
+}
+
+.adcontainer h1{
+    margin: 5px 30px 5px 0px;
+
+}
+.adcontainer p{
+    margin: 20px 30px 5px 0px;
+
+}
+.adcontainer_border{
+    border-right: 1px solid rgb(195, 195, 195);
+    padding: 20px 50px;
+}
+.adcontainer_no_border{
+    /* border-right: 2px solid black; */
+    padding: 20px 50px;
+}
+.adcontainer ul{
+    list-style: none;
+    margin: 10px 0px;
+    border-style: none;
+    padding: 20px 0px;
+}
+.adcontainer ul li{
+    width: fit-content;
+    cursor: pointer;
+    /* border-radius: 25px; */
+}
+.adcontainer ul li a{
+    text-decoration: none;
+    cursor: pointer;
+}
+.adcontainer ul .whitebtn a{
+    color: #F0884F;
+    cursor: pointer;
+}
+
+/* this is the start of the black container */
+.black_container{
+    background-color: black;
+    justify-content: center;
+    padding: 20px 0px;
+    margin: 20px 0px;
+    color: white;
+}
+.black_content_holder{
+    color: white;
+    display: flex;
+    margin-inline: auto;
+    margin: 5px 0px 0px;
+    padding: 0px 40px;
+}
+.black_content{
+    align-items: center;
+    width:fit-content;
+    padding: 0px 40px 0px 0px;
+}
+.black_content_image{
+    background-color: grey;
+    border: 1px solid grey ;
+    height: 200px;
+    width: 500px;
+    margin: 20px 0px;
+}
+.black_content_text p{
+    padding: 30px 0px 10px 0px;
+}
+.black_container ul{
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    margin: 60px 0px 0px;
+}
+.black_container ul li{
+    width: fit-content;
+    margin-inline: auto;
+    /* border-radius:20px; */
+    padding: 30px;
+}
+.black_container .orangebtn a{
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+.black_container .top_text{
+    width: 60%;
+    margin-inline: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.black_container .top_text h1{
+    margin: 0px 0px 10px 0px;
+}
+.black_container .top_text p{
+    margin: 10px 0px;
+}
+
+.footer{
+    background-color:#F0884F;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px;
+}
+.left_footer{
+    background-color: beige;
+    width: 50%;
+}
+.right_footer{
+    display: flex;
+    width: 50%;
+}
