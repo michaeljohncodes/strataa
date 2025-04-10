@@ -1,6 +1,7 @@
 *{
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
 }
 body{
     font-family: "Work Sans", sans-serif;
@@ -27,11 +28,16 @@ h1,h2,h3,h4,h5,h6 {
 
 /* Navigation section */
 nav{
+    width: 100%;
     display: flex;
     justify-content:space-between;
     align-items: center;
     padding: 0px 50px;
     box-shadow: 10px 20px 80px black;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 100;
 }
 .profile{
     display: flex;
@@ -105,7 +111,7 @@ nav .CTA ul li a{
 
 /* Hero Section */
 .hero{
-    margin: 30px 0px 0px;
+    margin: 100px 0px 0px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -156,24 +162,27 @@ nav .CTA ul li a{
 .gift{
     margin: 20px 40px;
     display: flex;
-    gap: 150px;
+    gap: 100px;
     /* justify-content:space-between; */
     align-items: center;
 }
 .gift_content{
     display: flex;
-    gap: 30px;
+    gap: 50px;
     /* justify-content:space-between; */
     align-items: center;
 }
 .gift_image{
-    background-color:#F0884F;
+    /* background-color:#F0884F; */
     width: 300px;
     height: 100px;
     border-radius: 10px;
 }
+.gift_image img{
+    width: 150%;
+}
 .secondlayer{
-    margin: 30px 0px;
+    margin: 200px 0px 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -247,7 +256,7 @@ nav .CTA ul li a{
     background-color: black;
     justify-content: center;
     padding: 20px 0px;
-    margin: 20px 0px;
+    margin: 100px 0px;
     color: white;
 }
 .black_content_holder{
@@ -281,8 +290,8 @@ nav .CTA ul li a{
 .black_container ul li{
     width: fit-content;
     margin-inline: auto;
-    /* border-radius:20px; */
-    padding: 30px;
+    border-radius:25px;
+    padding: 20px;
 }
 .black_container .orangebtn a{
     text-decoration: none;
